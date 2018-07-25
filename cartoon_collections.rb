@@ -23,7 +23,12 @@ def long_planeteer_calls(words)# code an argument here
   return false
 end
 
-def find_the_cheese# code an argument here
+def find_the_cheese(foods)# code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
+  foods.each do |food|
+    if food in cheese_types
+      return food
+    end
+  return nil
 end
